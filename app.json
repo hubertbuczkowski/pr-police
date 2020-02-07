@@ -2,7 +2,15 @@
   "name": "pr-police",
   "description": "A slack bot that reminds you of open PRs for review in your chosen repos",
   "repository": "https://github.com/Talkdesk/pr-police",
-  "keywords": ["pull", "request", "police", "github", "node", "slackbot", "slack"],
+  "keywords": [
+    "pull",
+    "request",
+    "police",
+    "github",
+    "node",
+    "slackbot",
+    "slack"
+  ],
   "logo": "https://raw.githubusercontent.com/Talkdesk/pr-police/master/images/badge-white-small.png",
   "formation": {
     "worker": {
@@ -29,21 +37,21 @@
     },
     "GH_REPOS": {
       "description": "Repositories to watch in user/repo format, comma separated",
-      "value": "johndoe/somerepo,johndoe/anotherrepo"
+      "value": "CurrencyFair/Atlas,CurrencyFair/Mercury,CurrencyFair/Vulcan,CurrencyFair/Apollo,CurrencyFair/api-js-sdk,CurrencyFair/Themis,CurrencyFair/Crateris,CurrencyFair/Charon,CurrencyFair/Xenia"
     },
     "GH_EXCLUDE_LABELS": {
       "description": "Repository labels that will exclude pull requests, comma-separated. Supercedes GH_LABELS",
-      "value": "",
+      "value": "g2g",
       "required": false
     },
     "GH_LABELS": {
       "description": "Repository labels to filter pull requests, comma separated",
-      "value": "",
+      "value": "needs-review",
       "required": false
     },
     "SLACK_CHANNELS": {
       "description": "Slack channels to post the announcements, comma separated. Required if SLACK_GROUPS is empty.",
-      "value": "",
+      "value": "engineering",
       "required": false
     },
     "SLACK_GROUPS": {
@@ -51,7 +59,6 @@
       "value": "",
       "required": false
     },
-
     "SLACK_BOT_NAME": {
       "description": "The name of the bot on your slack organization",
       "value": "",
