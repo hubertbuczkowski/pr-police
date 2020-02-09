@@ -13,7 +13,7 @@ function handler(req, res) {
 
    var queryObject = url.parse(req.url, true).query;
 
-   if (req.method == "get") {
+   if (req.method == "GET") {
       req.on('data', function (chunk) {
          data += chunk;
       });
