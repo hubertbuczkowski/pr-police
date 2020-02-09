@@ -1,32 +1,10 @@
 // require('./lib/server')()
 
-const app = require('http').createServer(handler);
+var express = require('express')
+var app = express()
 
-app.listen(9000);
+app.get('/', function (req, res) {
+   res.send('hello world')
+})
 
-function handler(req, res) {
-   var data = '';
-
-
-   console.log(req.url);
-   console.log(url.parse(req.url, true));
-
-   var queryObject = url.parse(req.url, true).query;
-
-   if (req.method == "GET") {
-      req.on('data', function (chunk) {
-         data += chunk;
-      });
-
-      req.on('end', function () {
-         console.log('Received body data:');
-         console.log(data.toString());
-
-      });
-   }
-
-   console.log("Query strings: " + JSON.stringify(queryObject));
-
-   res.writeHead(statusCode, { 'Content-Type': 'text/plain' });
-   res.end();
-}
+app.listen(3000)
