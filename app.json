@@ -29,11 +29,11 @@
     },
     "GH_TOKEN": {
       "description": "Github account token to access needed repositories",
-      "value": "secret"
+      "value": "5af58c1c7823f3d1d4b7d588451d6208e2c295d4"
     },
     "SLACK_TOKEN": {
       "description": "Slack token for bot",
-      "value": "secret"
+      "value": "xoxb-2151652508-943617059364-4ng8Y5cyePMszlXMCfOw6vB7"
     },
     "GH_REPOS": {
       "description": "Repositories to watch in user/repo format, comma separated",
