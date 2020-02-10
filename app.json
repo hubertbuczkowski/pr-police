@@ -2,7 +2,15 @@
   "name": "pr-police",
   "description": "A slack bot that reminds you of open PRs for review in your chosen repos",
   "repository": "https://github.com/Talkdesk/pr-police",
-  "keywords": ["pull", "request", "police", "github", "node", "slackbot", "slack"],
+  "keywords": [
+    "pull",
+    "request",
+    "police",
+    "github",
+    "node",
+    "slackbot",
+    "slack"
+  ],
   "logo": "https://raw.githubusercontent.com/Talkdesk/pr-police/master/images/badge-white-small.png",
   "formation": {
     "worker": {
@@ -21,15 +29,15 @@
     },
     "GH_TOKEN": {
       "description": "Github account token to access needed repositories",
-      "value": "secret"
+      "value": "5af58c1c7823f3d1d4b7d588451d6208e2c295d4"
     },
     "SLACK_TOKEN": {
       "description": "Slack token for bot",
-      "value": "secret"
+      "value": "xoxb-2151652508-943617059364-4ng8Y5cyePMszlXMCfOw6vB7"
     },
     "GH_REPOS": {
       "description": "Repositories to watch in user/repo format, comma separated",
-      "value": "johndoe/somerepo,johndoe/anotherrepo"
+      "value": "currencyfair/xenia"
     },
     "GH_EXCLUDE_LABELS": {
       "description": "Repository labels that will exclude pull requests, comma-separated. Supercedes GH_LABELS",
@@ -51,7 +59,6 @@
       "value": "",
       "required": false
     },
-
     "SLACK_BOT_NAME": {
       "description": "The name of the bot on your slack organization",
       "value": "",
