@@ -23,6 +23,7 @@
   "author": "rogeriopvl",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.17.1",
     "minimist": "^1.2.0",
     "moment": "^2.18.1",
     "pullhub": "^1.1.0",
