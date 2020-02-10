@@ -37,21 +37,25 @@
     },
     "GH_REPOS": {
       "description": "Repositories to watch in user/repo format, comma separated",
+<<<<<<< HEAD
       "value": "currencyfair/xenia"
+=======
+      "value": "CurrencyFair/Atlas,CurrencyFair/Mercury,CurrencyFair/Vulcan,CurrencyFair/Apollo,CurrencyFair/api-js-sdk,CurrencyFair/Themis,CurrencyFair/Crateris,CurrencyFair/Charon,CurrencyFair/Xenia"
+>>>>>>> custom-pr
     },
     "GH_EXCLUDE_LABELS": {
       "description": "Repository labels that will exclude pull requests, comma-separated. Supercedes GH_LABELS",
-      "value": "",
+      "value": "g2g",
       "required": false
     },
     "GH_LABELS": {
       "description": "Repository labels to filter pull requests, comma separated",
-      "value": "",
+      "value": "needs-review",
       "required": false
     },
     "SLACK_CHANNELS": {
       "description": "Slack channels to post the announcements, comma separated. Required if SLACK_GROUPS is empty.",
-      "value": "",
+      "value": "engineering",
       "required": false
     },
     "SLACK_GROUPS": {
